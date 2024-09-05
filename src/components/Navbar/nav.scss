@@ -1,8 +1,12 @@
 // navnp.scss
 nav {
+    background-color: #fff;
     display: flex;
     align-items: center;
     padding: 40px 30px 40px 30px;
+    position: sticky;
+    z-index: 3;
+    top: 0;
   }
     .Logo_cont {
       margin-right: 50px;
@@ -52,6 +56,9 @@ nav {
   
 //  Underline Animation   
 
+.hide {
+  display: none;
+} 
 .link_anim{
     position: relative;
 }
@@ -89,14 +96,15 @@ nav {
 }
 
     .NavbarLinks {
+      position: fixed;
       z-index: 2;
-      font-size: 24px;
       display: none;
       flex-direction: column;
-      position: absolute;
       text-align: center;
       top: 0;
       left: 0;
+      right: 0;
+      bottom: 0;
       width: 100%;
       height: 100%;
       background-color: white;
@@ -153,9 +161,10 @@ nav {
        }
       
       nav{
-        padding: 40px 10% 40px 10%;
+        padding: 40px 5% 40px 5%;
       }
       .menu-open {
+        
         .NavbarLinks {
           display: flex;
         }
@@ -169,10 +178,11 @@ nav {
         display: none;
       }
       .CloseIcon {
+        
         display: flex;
         align-self: flex-end;
         margin-top: 0%;
-        margin-right: 10%;
+        margin-right: 0%;
         cursor: pointer;
   
         img {
@@ -183,9 +193,7 @@ nav {
         display: none;
         li {
           margin: 40px;
-            // &:last-child {
-            //   margin-right: 50px;
-            // }
+            
         }
         .LogIn, .Search_cont, .SignIn {
           display: block;
@@ -195,6 +203,7 @@ nav {
           display: flex;
           align-items: center;
           justify-content: center;
+          padding: 0;
         }
       }
       .search_inp,.search_icon{

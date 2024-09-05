@@ -12,18 +12,39 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
     document.querySelector("html").style.overflow = isOpen ? "auto" : "hidden";
+
+    const burgerMenuIcon = document.querySelector(".BurgerMenu img");
+    if (burgerMenuIcon) {
+      burgerMenuIcon.style.display = isOpen ? "block" : "none";
+    }
+
+    const navBar = document.querySelector("nav");
+    if (navBar) {
+      navBar.style.padding = isOpen ? "40px 30px" : "0"; // Приховуємо або повертаємо падінги
+    }
   };
 
   const closeMenu = () => {
     setIsOpen(false);
     document.querySelector("html").style.overflow = "auto";
+
+    const burgerMenuIcon = document.querySelector(".BurgerMenu img");
+    if (burgerMenuIcon) {
+      burgerMenuIcon.style.display = "block"; // Показуємо іконку знову
+    }
+
+    const navBar = document.querySelector("nav");
+    if (navBar) {
+      navBar.style.padding = "40px 5%"; // Повертаємо стандартні падінги
+    }
   };
 
   return (
     <nav>
-      <a className="Logo_cont" href="/">
+      <a className={`Logo_cont ${isOpen ? "hide" : ""}`} href="/">
         <img src={logo} alt="Logo" />
       </a>
+
       <ul>
         <li>
           <a className="link_anim" href="/">
@@ -51,9 +72,9 @@ const Navbar = () => {
       </div>
 
       <ul className={`NavbarLinks${isOpen ? " open" : ""}`}>
-        <div className="CloseIcon" onClick={closeMenu}>
+        <li className="CloseIcon" onClick={closeMenu}>
           <img src={closeIcon} alt="Close Icon" />
-        </div>
+        </li>
         <li>
           <a className="link_anim" href="/">
             Home
@@ -78,7 +99,7 @@ const Navbar = () => {
       </ul>
 
       <div
-        className={`BurgerMenu${isOpen ? " open" : ""}`}
+        className={`BurgerMenu ${isOpen ? "hide" : ""}`}
         onClick={toggleMenu}>
         <img src={burgerIcon} alt="Burger Menu" />
       </div>

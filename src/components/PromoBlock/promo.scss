@@ -59,14 +59,18 @@ p{
         object-fit: cover;
     }
     .promo_img{
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin: 80px 40px;
+
     }
 }
 
 @media screen and (max-width: 875px){
     h1{
         font-size: 40px;
+    }
+    .promo_img{
+        margin: 40px 40px 60px 40px;
+
     }
 }
 
