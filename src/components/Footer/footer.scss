@@ -1,0 +1,133 @@
+
+.footer {
+    width: auto;
+    background-color:  #F5F7FA;
+    height: 300px;
+    padding: 40px 5%;
+    color: #202C39;
+  
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+  
+    .footer-column {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+  
+     .Headlines{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 28px;
+        color: #0A142F;
+        gap: 0px;
+     }
+    
+      p {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 0px;
+        font-weight: 400;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+        flex-direction: column;
+  
+        li {
+          
+  
+          a {
+            text-decoration: none;
+            color: #333;
+            line-height: 16px;
+            font-weight: 400;
+            font-size: 20px;
+  
+            &:hover {
+              color: #202C39;
+            }
+          }
+        }
+      }
+      .social_icons{
+        width: 34px;
+        height: 32px;
+     }
+  .Phone_numb{
+    font-size: 20px;
+    line-height: 32px;
+    color: #0A142F;
+  }
+  .Email_exmp{
+    font-size: 16px;
+    font-weight: 400;
+    color:  #0A142F;
+    
+  }
+      input[type="email"] {
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid #202C39;
+        width: 100%;
+        max-width: 200px;
+      }
+    }
+  .footer_li{
+    font-size: 16px;
+    margin-bottom: 20px;
+    
+  }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+  
+      .footer-social {
+        display: flex;
+        gap: 10px;
+  
+      }
+  
+      p {
+        margin: 0;
+        color: #999;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .footer { 
+        height: auto;
+    }
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-column {
+      margin-bottom: 0px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+  
+      .footer-social {
+        margin-bottom: 20px;
+      }
+    }
+    .Headlines{
+        display: none;
+    }
+    .input_email{
+        margin-top: 20px;
+    }
+  }
+  

@@ -1,0 +1,111 @@
+.team_block {
+    text-align: center;
+    
+  
+    h1 {
+      font-size: 48px;
+      margin-bottom: 25px;
+    }
+  
+    .unlock {
+      margin-bottom: 40px;
+      font-size: 18px;
+      color: #636C75;
+    }
+  
+    .Parts_block {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 40px 80px;
+      padding: 0px 40px;
+      padding-bottom: 40px; 
+      justify-items: center;
+      align-items: start;
+      
+
+  
+      @media (max-width: 1024px) {
+        grid-template-columns: 1fr;  
+        h1 {
+          font-size: 40px;
+          
+        }
+      }
+  
+      .part {
+        min-height: 270px;
+        background-color: #F5F7FA;
+        border-radius: 24px; 
+        text-align: left;
+        position: relative;
+        transition: transform 0.3s ease;
+  
+        &:hover {
+          transform: translateY(-10px);
+        }
+  
+        h3 {
+          font-weight: 700;
+          font-size: 28px;
+          color: #202C39;
+          margin-top: 0;
+          margin-bottom: 40px;
+          
+        }
+  
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          color: #636C75;
+        }
+  
+        button {
+          width: 150px;
+          height: 50px;
+          background-color: #F29559;
+          color: #202C39;
+          padding: 0px 25px;
+          border-radius: 12px;
+          font-size: 16px;
+          font-weight: 600;
+          margin-top: 50px;
+  
+          &:hover {
+            background-color: #e67e3a;
+          }
+        }
+      }
+    }
+  }
+  
+
+ 
+  .first_part, .fourth_part{
+    width: 100%;
+    grid-column: span 2; 
+    padding: 25px;
+  }
+
+
+  .second_part, .third_part {
+    width: 100%;
+    grid-column: span 4; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #f5f7fa;
+    border-radius: 24px;
+    padding: 25px;
+    position: relative;
+  }
+
+  .img2_cont, .img3_cont{
+    flex-shrink: 0;
+  }
+
+    
+  .small_icons {
+    width: 50px; 
+    margin-bottom: 50px;
+  }

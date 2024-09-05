@@ -1,0 +1,47 @@
+body{
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 20px;
+    color: #202C39;
+
+}
+
+a{
+    color: #636C75;
+  }
+
+  h1,p{
+    margin: 0;
+  }
+
+  button {
+    all: unset; /* Сбрасывает все стили, но сохраняет доступность */
+    display: inline-block; /* Восстанавливает поведение блочного элемента */
+    cursor: pointer; /* Изменяет курсор на указатель */
+    padding: 0; /* Убирает отступы */
+    margin: 0; /* Убирает внешние отступы */
+    border: none; /* Убирает обводку */
+    background: none; /* Убирает фон */
+    color: inherit; /* Наследует цвет текста от родителя */
+    font: inherit; /* Наследует шрифт от родителя */
+    text-align: inherit; /* Наследует выравнивание текста */
+  }
+
+  input {
+    border: none; /* Убирает обводку */
+    background: transparent; /* Убирает фон */
+    padding: 0; /* Убирает внутренние отступы */
+    margin: 0; /* Убирает внешние отступы */
+    font: inherit; /* Наследует шрифт от родителя */
+    color: inherit; /* Наследует цвет текста от родителя */
+    box-shadow: none; /* Убирает тень */
+    outline: none; /* Убирает контур при фокусе */
+  }
+
+  h1{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 58px;
+    font-family: "Inter Tight", sans-serif;
+  }
