@@ -23,9 +23,11 @@ a{
     margin: 0; /* Убирает внешние отступы */
     border: none; /* Убирает обводку */
     background: none; /* Убирает фон */
+    background-color: #F29559;
+    border-radius: 12px;
     color: inherit; /* Наследует цвет текста от родителя */
     font: inherit; /* Наследует шрифт от родителя */
-    text-align: inherit; /* Наследует выравнивание текста */
+    text-align: center; /* Наследует выравнивание текста */
   }
 
   input {
@@ -44,4 +46,17 @@ a{
     font-weight: 800;
     line-height: 58px;
     font-family: "Inter Tight", sans-serif;
+  }
+
+  a {
+    text-decoration: none; /* Убирает подчеркивание */
+    color: inherit; /* Наследует цвет от родительского элемента */
+    cursor: pointer; /* Показывает указатель курсора при наведении */
+  }
+  
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none; /* Убирает подчеркивание при наведении, фокусе и активности */
+    color: inherit; /* Наследует цвет от родительского элемента */
   }
