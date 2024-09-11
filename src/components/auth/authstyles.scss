@@ -1,13 +1,17 @@
 // General common settings
+
+
 .auth{
-    background-image: url('../../images/AuthBack.png');  // Указываем путь к изображению
-    background-size: cover;       // Изображение масштабируется по всему экрану
-    background-position: center;  // Центрируем изображение
-    background-repeat: no-repeat; // Изображение не повторяется
-    height: 100%;                // Высота на весь экран
+    
+    background-image: url('../../images/AuthBack.png');  
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat;
+    min-height: 100vh;            
     margin: 0;
     padding: 0;
     display: flex;
+    
 }
 
 .dark_logo{
@@ -31,9 +35,9 @@
     padding-top: 40px;
     padding-bottom: 40px ;
     flex-grow: 1;
+    gap: 20px;
  
 
- 
 
     h4{
         font-size: 28px;
@@ -41,11 +45,10 @@
     }
 
     h6{
-        font-size: 16px;
+        font-size: 18px;
         margin: 0;
         font-weight: 600;
-        margin-bottom: 10px;
-        margin-top: 15px;
+        
     }
 
     input{
@@ -163,7 +166,7 @@
     margin-bottom: 30px;
     margin-top: 30px;
     h4{
-        margin-top: 0px;
+        margin-top: 15px;
     }
    
    .signup_btn{
@@ -182,4 +185,22 @@
     margin-top: 10px;
    }
     
+}
+
+@media screen and (max-width: 500px) {
+    .form{
+        margin: 2%;
+        max-width: 280px;
+        padding: 40px;
+        gap: 15px;
+
+        input{
+            font-size: 14px;
+        }
+
+        .gauth_cont{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
 }

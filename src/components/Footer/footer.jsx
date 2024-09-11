@@ -1,9 +1,9 @@
 import React from "react";
 import "./footer.scss";
-const logo = require("../../images/Logo.png");
-const linkedin = require("../../images/Linkedin.png");
-const facebook = require("../../images/facebook.png");
-const twiter = require("../../images/Twitter.png");
+import { ReactComponent as Logo } from "../../images/Logo.svg";
+import { ReactComponent as Twiter } from "../../images/Twitter.svg";
+import { ReactComponent as Facebook } from "../../images/facebook.svg";
+import { ReactComponent as LinkedIn } from "../../images/Linkedin.svg";
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-column">
           <a className="logo_footer" href="/">
-            <img src={logo} alt="Logo" />
+            <Logo />
           </a>
           <p className="Phone_numb">+38 (068) 123-46-67</p>
           <p className="Email_exmp">beeld@gmail.com</p>
@@ -53,13 +53,13 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-social">
           <a href="/">
-            <img className="social_icons" src={linkedin} alt="LinkedIn" />
+            <LinkedIn />
           </a>
           <a href="/">
-            <img className="social_icons" src={facebook} alt="Facebook" />
+            <Facebook />
           </a>
           <a href="/">
-            <img className="social_icons" src={twiter} alt="Twitter" />
+            <Twiter />
           </a>
         </div>
         <p>© 2020 Lift Media. All rights reserved</p>

@@ -73,4 +73,21 @@ p{
 
     }
 }
+@media screen and (max-width: 500px){
+    h1{
+        font-size: 30px;
+    }
+    .promo_img{
+        margin: 20px 20px 40px 20px;
+
+    }
+
+    .promo_btn{
+        margin-top: 20px;
+    }
+    .promo_block{
+        padding: 0px;
+    }
+  
+}
 
