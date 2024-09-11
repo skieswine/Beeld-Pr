@@ -109,3 +109,15 @@
     width: 50px; 
     margin-bottom: 50px;
   }
+
+  @media (max-width: 550px) {
+    .honey_img , .brick_img{
+      display: none;
+    }
+    .first_part, .second_part, .third_part, .fourth_part{
+      grid-column: span 1; 
+    }
+    h1{
+      font-size: 30px;
+    }
+  }

@@ -14,8 +14,8 @@ const Reg = () => {
 
       <div className="form reg_form">
         <h4>Sign Up</h4>
+        <h6>Full Name</h6>
         <div className="inp name_inp">
-          {/* <h6>Full Name</h6> */}
           <input placeholder="Your Name" type="text" />
         </div>
         <h6>Email or Phone number</h6>
