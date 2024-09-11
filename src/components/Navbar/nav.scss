@@ -127,7 +127,7 @@ nav {
   }
   .SignIn{
     width: 120px;
-    height: 45px;
+    min-height: 45px;
     border-radius: 12px;
     color: #fff;
     background-color:#202C39;
@@ -136,7 +136,9 @@ nav {
  .SignIn:hover{
     transform: scale(1.1);
  }
-
+.LogIn{
+  background-color: transparent;
+}
  .Search_cont{
     display: flex;
     align-items: center;
@@ -147,6 +149,7 @@ nav {
     height: 50px;
  }
  .search_inp{
+  padding: 15px;
     width: 120px;
  }
  .search_icon{
@@ -206,11 +209,10 @@ nav {
           padding: 0;
         }
       }
-      .search_inp,.search_icon{
-        margin-top: 11px;
-        }
+  
         .SignIn{
           width: 180px;
+          height: 60px;
           
         }
     }
