@@ -1,6 +1,6 @@
 // Navbar.jsx
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./nav.scss";
 const logo = require("../../images/Logo.png");
 const burgerIcon = require("../../images/menu.png");
@@ -42,25 +42,25 @@ const Navbar = () => {
 
   return (
     <nav>
-      <a className={`Logo_cont ${isOpen ? "hide" : ""}`} href="/">
+      <Link to="/" className={`Logo_cont ${isOpen ? "hide" : ""}`}>
         <img src={logo} alt="Logo" />
-      </a>
+      </Link>
 
       <ul>
         <li>
-          <a className="link_anim" href="/">
+          <Link to="/" className="link_anim">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="link_anim" href="/">
+          <Link to="/crews" className="link_anim">
             Crews
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="link_anim" href="/">
+          <Link to="/" className="link_anim">
             Support
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="nav-action_cont">
@@ -68,8 +68,12 @@ const Navbar = () => {
           <img className="search_icon" src={searchIcon} alt="Search Icon" />
           <input className="search_inp" placeholder="Search..." type="text" />
         </div>
-        <button className="LogIn">Log in</button>
-        <button className="SignIn">Sign in</button>
+        <Link to="/login">
+          <button className="LogIn">Log in</button>
+        </Link>
+        <Link to="/register">
+          <button className="SignUp">Sign up</button>
+        </Link>
       </div>
 
       <ul className={`NavbarLinks${isOpen ? " open" : ""}`}>
@@ -77,22 +81,27 @@ const Navbar = () => {
           <img src={closeIcon} alt="Close Icon" />
         </li>
         <li>
-          <a className="link_anim" href="/">
+          <Link to="/" className="link_anim">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="link_anim" href="/">
+          <Link to="/crews" className="link_anim">
             Crews
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="link_anim" href="/">
+          <Link to="/" className="link_anim">
             Support
-          </a>
+          </Link>
         </li>
-        <button className="LogIn">Log in</button>
-        <button className="SignIn">Sign in</button>
+        <Link to="/login">
+          <button className="LogIn">Log in</button>
+        </Link>
+        <Link to="/register">
+          <button className="SignUp">Sign Up</button>
+        </Link>
+
         <div className="Search_cont">
           <img className="search_icon" src={searchIcon} alt="Search Icon" />
           <input className="search_inp" placeholder="Search..." type="text" />
