@@ -12,7 +12,7 @@ document.head.appendChild(link);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-<Router>
+    <Router>
     <App />
     </Router>
 );

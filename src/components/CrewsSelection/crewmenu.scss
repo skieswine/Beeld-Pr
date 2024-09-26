@@ -1,0 +1,119 @@
+.main_search-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.dropdown {
+  position: relative;
+  width: fit-content;
+  ul,
+  li {
+    margin: 0;
+  }
+}
+
+.dropdown-button {
+  /* Стилі для кнопки */
+  cursor: pointer;
+  background-color: #f5f7fa;
+  //   background-color: pink;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px 16px 20px;
+  border-radius: 35px;
+  font-weight: 400;
+
+  /* Додати інші стилі за потреби */
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #f5f7fa;
+  //   background-color: pink;
+  text-align: center;
+  font-weight: 400;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  padding-bottom: 1.5px;
+  padding-top: 10px;
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+}
+.dropdown-menu_element {
+  transition: all 0.5s ease !important;
+  li {
+    margin-bottom: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  :hover {
+    background-color: #f29559;
+    color: #ffff;
+  }
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.arrow {
+  border: solid #606a73;
+  border-width: 0 3px 3px 0;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.open {
+  border-bottom-left-radius: 0px 0px;
+  border-bottom-right-radius: 0px 0px;
+}
+.srch {
+  min-width: 550px;
+  min-height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.srch_block-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.srch_block-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.srch-ico {
+  cursor: pointer;
+}
+.crew-title_block {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  h1 {
+    span {
+      color: #f29559;
+    }
+  }
+}

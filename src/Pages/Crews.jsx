@@ -1,11 +1,10 @@
 import React from "react";
-import WorkersList from "../components/CrewsSelection/WorkersList";
-import "../components/CrewsSelection/styles.scss";
-
+import CrewMenu from "../components/CrewsSelection/CrewMenu";
+import "../components/CrewsSelection/crewmenu.scss";
 const Crews = () => {
   return (
     <>
-      <WorkersList />
+      <CrewMenu />
     </>
   );
 };
