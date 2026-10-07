@@ -23,14 +23,14 @@ const Reg = () => {
           {" "}
           <input
             id="emailOrPhone"
-            placeholder="name@damain.com or (555) 555-1234"
+            placeholder="name@domain.com or (555) 555-1234"
             type="text"
           />
         </div>
 
         <h6>Password</h6>
         <div className="inp pass_inp">
-          <input placeholder="6+ characrters" type="password" />
+          <input placeholder="6+ characters" type="password" />
           <img src="" alt="" />
         </div>
 
@@ -43,18 +43,18 @@ const Reg = () => {
           By creating an account you agree with our Terms of Service <br />{" "}
           and Privacy Policy.
         </p>
-        <di className="gauth_cont">
+        <div className="gauth_cont">
           <button className="google_btn">
             <img src={google} alt="" />
             Sign up with Google
           </button>
-        </di>
+        </div>
 
         <div className="no_acc">
           <p>Already have an account?</p>
-          <a className="sign_link" href="/">
-            Sig Up
-          </a>
+          <Link className="sign_link" to="/login">
+            Log In
+          </Link>
         </div>
       </div>
     </div>

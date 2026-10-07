@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 
 const link = document.createElement('link');
-link.href = 'href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap';
+link.href = 'https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap';
 link.rel = 'stylesheet';
 document.head.appendChild(link);
 

@@ -20,6 +20,7 @@
 h1{
     font-size: 64px;
     font-weight: 800;
+    line-height: 1.15;
 }
 
 p{
@@ -76,6 +77,10 @@ p{
 @media screen and (max-width: 500px){
     h1{
         font-size: 30px;
+        line-height: 1.2;
+    }
+    .promo_block br{
+        display: none;
     }
     .promo_img{
         margin: 20px 20px 40px 20px;
